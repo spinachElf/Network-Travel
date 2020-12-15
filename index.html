@@ -82,14 +82,22 @@
 			from{opacity: 0; margin-top: 100px;}
 			to{opacity: 1; margin-top: 0px;}
 		}
-		#gif1:hover ~ #info1{ opacity: 1;border: 2px #0066ff solid; width: 400px; position: relative; top: 750px; left: 50px; z-index: 4; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif2:hover ~ #info2{ opacity: 1;border: 2px #0066ff solid; width: 400px; position: relative; top: 650px; left: 350px; z-index: 4;  background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif3:hover ~ #info3{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif4:hover ~ #info4{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 550px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif5:hover ~ #info5{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif6:hover ~ #info6{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 600px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif7:hover ~ #info7{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
-		#gif8:hover ~ #info8{ opacity: 1;border: 2px #0066ff solid; width: auto; position: relative; top: 600px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#info1{display: none;}
+		#info2{display: none;}
+		#info3{display: none;}
+		#info4{display: none;}
+		#info5{display: none;}
+		#info6{display: none;}
+		#info7{display: none;}
+		#info8{display: none;}	
+		#gif1:hover ~ #info1{ display: block;border: 2px #0066ff solid; width: 400px; position: relative; top: 750px; left: 50px; z-index: 4; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif2:hover ~ #info2{ display: block;;border: 2px #0066ff solid; width: 400px; position: relative; top: 650px; left: 350px; z-index: 4;  background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif3:hover ~ #info3{ display: block;;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif4:hover ~ #info4{ display: block;border: 2px #0066ff solid; width: auto; position: relative; top: 550px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif5:hover ~ #info5{ display: block;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif6:hover ~ #info6{ display: block;border: 2px #0066ff solid; width: auto; position: relative; top: 600px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif7:hover ~ #info7{ display: block;border: 2px #0066ff solid; width: auto; position: relative; top: 750px; left: 50px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
+		#gif8:hover ~ #info8{ display: block;border: 2px #0066ff solid; width: auto; position: relative; top: 600px; left: 350px; z-index: 4; display: inline-block; background: white; font-size: 1.2em; color: #0066ff; padding: 10px;}
 		.giftitle{font-weight: bold; font-size: 1.2em;}
 		div img{position: absolute; display: block; z-index: 2}
 		.sticky{
@@ -104,7 +112,7 @@
 		.sticker150{width: 150px;}
 		.sticker300{width: 300px;}
 		.sticker400{width: 400px;}
-		#luggage{animation: bye 3s; animation-play-state: paused;}
+		#luggage{animation: bye 3s; animation-play-state: paused; animation-fill-mode: forwards;}
 		@keyframes bye{
 			from{left: 0}
 			to{left: 3000px;};
@@ -165,8 +173,6 @@
 	</span>
 	<div class="row">
 		<img src="bag1.png" class="bag">
-		<img src="bag1_.png" class="bag" style="z-index: 3">
-
 		<img src="https://media.giphy.com/media/4PXXgk8pFA5d7d53HJ/source.gif" id="gif1" class="drag bttani" style="width: 300px;top: 500px; left: -100px;">
 		<div id="info1">
 			<p class="giftitle">키보드 워리어 자아</p><p>타인과의 의사소통에서 <br>'우위'를 점하고자 하는 마음이 높은 자아입니다. <br>지적능력-3 분노상태+4</p></div>
