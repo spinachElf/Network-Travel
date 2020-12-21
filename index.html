@@ -26,7 +26,7 @@
 		.intro{padding: 10%; height: 1200px; color: white; font-size: 2em; }
 		.fadein{animation: fadein 4s;}
 		#passButton{width: 70px;}
-		#goButton{width: 200px;text-decoration: none;}
+		#goButton{width: 500px;height: 200px;text-decoration: none; font-size: 4rem; padding: 30px; border-radius: 300px; margin: auto;}
 		.button{height: 30px; background: white; border-radius: 20px; cursor: pointer;border: none; font-size: 1.3rem; color: #0066ff}
 		#checkButton{}
 		@keyframes fadein{
@@ -129,11 +129,61 @@
     transform: translateX(-100%);
   }
 }
+		.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
 
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
 	</style>
 </head>
 <body>
+	<span class="loader"><span class="loader-inner"></span></span>
 	<h1 class="fadein">Network Travel</h1>
 	<div class=" row intro fadein wow">
 			<p style="font-size: 0.5em">크롬 브라우저 이용을 권장드립니다. </p>
@@ -175,7 +225,6 @@
 	<span class=" info textbox wow">
 		<h2>Packing</h2>
 		<p>공항으로 출발하기 전에, 짐을 싸는 것을 도와드리고 있습니다. 각 물건들에 마우스를 올려 검토해보신 후, 가방에 드래그하여 담아보시길 바랍니다. 원하는 만큼 자아를 담은 후, '공항으로 출발' 버튼을 클릭하시면 공항으로 안내해드리겠습니다. </p>
-		<a id="goButton" class="button" href="#airport">공항으로 출발</a>
 	</span>
 	<div class="row">
 		<img src="bag1.png" class="bag">
@@ -206,7 +255,11 @@
 	</div>
 	<div class="row"></div>
 	<div class="row">
-		<img src="https://media.giphy.com/media/QJKioAmCkwUI03PcYC/giphy.gif" style="left: 700px; top: 100px;">
+		<a class="button" id="goButton"  href="#airport">공항으로 출발⬇</a>
+
+	</div>
+	<div class="row">
+		<img src="http://www.pngmart.com/files/11/Internet-Hacker-PNG-Photos.png" style="left: 700px; top: 100px;">
 		<img src="https://media.giphy.com/media/4Z3utskFp8PqEPHVsd/giphy.gif" style="left: 200px; top: 500px;"> 
 		<img src="https://media.giphy.com/media/upfHyxcN4YSqs/giphy.gif" style="left: 300px; top: 800px;">
 		<img src="https://media.giphy.com/media/IffxphsWUyta4EAQrA/giphy.gif"  style="left: 100px; top: 1200px;">
